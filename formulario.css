@@ -1,0 +1,152 @@
+/* Configuração Geral e Plano de Fundo da Página */
+body {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(135deg, #eef2f3 0%, #e0f2f1 50%, #e3f2fd 100%);
+    margin: 0;
+    padding: 40px 20px;
+    color: #2c3e50;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Garante que o cálculo de tamanho (largura/altura) inclua bordas e preenchimentos em todos os elementos */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Cabeçalho Superior da Escola (Faixa Azul) */
+header {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Texto de Subtítulo dentro do Cabeçalho */
+header p {
+    color: #e2e8f0;
+    margin: 5px 0 0 0;
+}
+
+/* Bloco Central Branco que Envolve o Formulário */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos Principais e Secundários do Formulário */
+h1,
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #0f172a;
+}
+
+/* Caixas de Agrupamento de Campos (Ex: Dados Pessoais) */
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+}
+
+/* Texto de Título da Caixa de Agrupamento (Fica sobre a linha) */
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #1e3a8a;
+}
+
+/* Etiquetas de Texto que Nomeiam os Campos (Ex: Nome, E-mail) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #334155;
+}
+
+/* CORREÇÃO: Faz o texto dos cursos e da declaração ficar ao lado do marcador, sem pular linha */
+.radio-group label,
+.checkbox-group label {
+    display: inline;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+/* Campos de Entrada de Texto, Data e E-mail */
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+/* Efeito Visual quando o Usuário Clica para Digitar nos Campos */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #0d9488;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}
+
+/* Alinhamento dos Grupos de Opções (Bolinhas e Caixas de Seleção) */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+/* Estilização das Bolinhas de Escolha e Quadradinhos de Seleção */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #0d9488;
+}
+
+/* Botão Principal de Enviar o Formulário */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #0d9488;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(13, 148, 136, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Efeito de Animação quando o Mouse Passa por Cima do Botão */
+button:hover {
+    background-color: #0f766e;
+    box-shadow: 0 6px 12px rgba(15, 118, 110, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Efeito de Clique Pressionado no Botão (Simula o Botão Afundando) */
+button:active {
+    transform: translateY(1px);
+}
