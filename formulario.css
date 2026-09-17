@@ -97,8 +97,8 @@ input[type="email"] {
 }
 
 /* Efeito Visual quando o Usuário Clica para Digitar nos Campos */
-input[type="text"]:focus,
-input[type="date"]:focus,
+input[type="text"]:focus, /* Os [] seleciona apenas os inputs que são do tipo texto */
+input[type="date"]:focus, /* E o focus é uma pseudo-classe no CSS que detecta quando um elemento está ativo ou selecionado */
 input[type="email"]:focus {
     outline: none;
     border-color: #0d9488;
